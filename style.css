@@ -1,0 +1,79 @@
+
+      html{margin: 0}
+      header.main{text-align: center;
+          padding: 20px 10px;
+          height: 22vh;
+          background:linear-gradient(red,violet);
+          color: #f1f1f1;
+      }
+      header.main h1{text-shadow: 3px 3px 5px blue}
+      
+      .table{margin: 20px;
+      padding: 0;}
+      tr:first-child{background: #777;color: #f1f1f1}
+      tr:first-child a{color: #f1f1f1}
+      tr:first-child:hover{color: #f1f1f1}
+      footer{color: #f1f1f1;
+          margin-top: 50px;
+          border-top:2px solid #000;
+          width: 100%;
+          padding: 20px;
+          background:#0d1d1d;
+          
+      }
+      .btnnav{display:block}
+      .btnnav.pre{float: left}
+      .btnnav.pre{float: right}
+      div[class*="col-"]{min-height: 1px}
+      .content{
+      padding: 10px;
+          margin: 20px;
+      border-radius: 20px}
+      
+      .social{background: blue;
+      padding: 3px;
+          margin: 10px 5px;
+          display: inline-block;
+          border-radius: 10px;
+      color: #f1f1f1;
+      border: 1px solid #777}
+      .social:hover{padding: 3px 7px}
+      .social i,.social a{color: #f1f1f1;font-weight: 500}
+      .social a:visited{color: lawngreen}
+      
+      .lefticon{float: left;
+      border: 1px solid #777;
+      padding: 6px 16px;
+           border-radius: 4px;
+         display:none;
+      }
+      .lefticon>div{
+          color: #f1f1f1;
+          display:block;
+          width: 25px;
+          
+  height: 2px;
+         
+  background-color:#f1f1f1;
+  margin: 5px 0;
+      }
+      .menu1{display: none;
+          position: absolute;
+          background: #000;
+          color: #f1f1f1;
+          padding: 10px;
+          width: 50%;
+          z-index: 100;
+      }
+      .menu1 ul{list-style: none;padding: 0;margin: 0}
+      .menu1 ul li{
+          width: 60%;
+          padding: 10px;
+          border-bottom: 1px solid #ddd;
+      }
+
+      @media screen and (max-width:500px){
+          .lefticon{display:block}
+          .social a{display:inherit}
+          .social{display:inherit}
+      }
