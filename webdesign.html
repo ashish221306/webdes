@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>project4 bootstrap</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+      article p.intro{
+          font-size: 21px;
+      }
+      .frame{
+          overflow: hidden;
+          box-shadow: 5px 5px 10px 6px #06021f;
+          
+          text-shadow: 2px 2px 2px #06021f;
+          text-align: center;
+          border-radius:50%;
+          height:20vw;
+          width: 20vw;
+          border: 2px solid yellow;
+          margin: 20px;
+          transition:all .5s ease-in;
+          
+          
+      }
+      .frame section{padding:25px 3px;}
+      a{text-decoration: none}
+      .frame:hover{
+          animation: move 1s 1;
+      }
+      
+      @keyframes move{
+          0%{transform: rotate(360deg)}
+            100%{transform: rotate(-360deg)}
+      }
+      .frame1{background: linear-gradient(red,blue)}
+      .frame2{background: linear-gradient(#1f0606,purple)}
+      .frame3{background: linear-gradient(red,#b11eb1)}
+      .frame4{background: linear-gradient(red,blue)}
+      .frame5{background: linear-gradient(rgba(51, 51, 154, 0.28),#ca24d8)}
+      .frame6{background: linear-gradient(red,blue)}
+      
+      .flex{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-around;
+      }
+      #collapsibleNavbar{border-bottom: 1px solid green}
+      .frame section h3{font-size: 60%}
+      .flex section h3{color: #f1f1f1;}
+      .flex section a{color: #f1f1f1}
+      article{padding:10px}
+      @media screen and (min-width:600px){
+          .navbar-brand{display: none}
+      }
+    </style>
+</head>
+<header class="main">
+    <h1 style="font-style: italic">Ashishtech Solution</h1>
+   
+</header>
+ <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+ 
+  
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">tutorial</a>
+  
+
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+     <li class="nav-item">
+        <a class="nav-link" href="index.html">home</a>
+      </li>
+      
+
+     
+       <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        mean stack
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="angular-js.html">Angular js</a>
+        <a class="dropdown-item" href="#">Angular</a>
+        <a class="dropdown-item" href="#">Express js</a>
+        <a class="dropdown-item" href="#">Node js</a>
+        <a class="dropdown-item" href="#">Mongodb</a>
+       
+      </div>
+    </li>
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Web Designing
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">html tutorial</a>
+        <a class="dropdown-item" href="#">html5 tutorial</a>
+        <a class="dropdown-item" href="#">css tutorial</a>
+        <a class="dropdown-item" href="#">css3 tutorial</a>
+        <a class="dropdown-item" href="#">javascript tutorial</a>
+        <a class="dropdown-item" href="#">jquery tutorial</a>
+        <a class="dropdown-item" href="#">bootsrap3 tutorial</a>
+        <a class="dropdown-item" href="#">bootsrap4 tutorial</a>
+        <a class="dropdown-item" href="angular-js.html">Angular js</a>
+         <a class="dropdown-item" href="#">sass tutorial</a>
+      </div>
+    </li>
+     <li class="nav-item">
+        <a class="nav-link" href="seo.html">seo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="digital-marketing.html">digital marketing</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<body>
+<div class="container-fluid">
+   <article>
+       <header>
+           <h1>Ashishtech Solution | Tutorial</h1>
+       </header>
+       <p class="intro">
+               Welcome To Ashishtech Solution Online Free Web Tutorial.We have tried to cover all topics in depth with practical example and interview questions. Those who wants to enhance and upgrade their skills in Web Technologies can learn from our online tutorial.
+           </p>
+   </article>
+   <hr>
+   <article>
+       <header>
+           <h2 class="text-center"><a title="Web Designing Tutorial" href="webdesigning.html">Web Designing Tutorial</a></h2>
+       </header>
+       <p class="intro"><strong>web designing tutorial</strong> <i style="color: #06021f;text-shadow: 2px 2px 13px green">HTML, HTML5, CSS, CSS3, JAVASCRIPT, JQUERY, BOOTSTRAP, SASS.</i> Learn web designing skills with latest standard and live examples. <a href="webdesigning.html">Web designing tutorial</a></p>
+   </article>
+    
+      <div class="flex">
+          <a href="html.html">
+              <div class="frame frame1 ">
+                  <section>
+                      <h3>HTML</h3>
+                      <p></p>
+                  </section>
+              </div>
+          </a>
+            
+      
+        
+          <a href="html.html">
+              <div class="frame frame1 ">
+                  <section>
+                      <h3>HTML</h3>
+                  </section>
+              </div>
+          </a>
+            
+       
+        
+          <a href="html.html">
+              <div class="frame frame2 ">
+                  <section>
+                      <h3>HTML</h3>
+                  </section>
+              </div>
+          </a>
+            
+       
+       
+          <a href="html.html">
+              <div class="frame frame3 ">
+                  <section>
+                      <h3>HTML</h3>
+                  </section>
+              </div>
+          </a>
+            
+       
+        
+          <a href="html.html">
+              <div class="frame frame4 ">
+                  <section>
+                      <h3>HTML</h3>
+                  </section>
+              </div>
+          </a>
+            
+        
+        
+          <a href="html.html">
+              <div class="frame frame5 ">
+                  <section>
+                      <h3>HTML</h3>
+                  </section>
+              </div>
+          </a>
+            
+     
+    </div>
+</div>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/hi_IN/sdk.js#xfbml=1&version=v6.0&appId=589042788608871&autoLogAppEvents=1"></script>
+<div class="fb-comments" data-href="https://ashishtech.com" data-width="100%" data-numposts="15"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+  
+    
+        
+    
+    </script>
+</body>
+<footer>
+<div class="container-fluid">
+    <div class="row">
+       <div class="col-sm-12 col-md-12 col-xs-12">
+       <p>site-by: ashish kumar</p>
+        </div>
+        <div class="col-sm-2 col-md-2 col-xs-6">
+        
+			   <div class="social">
+			        <a href="https://www.instagram.com/ashish_kumar231/" target="_blank" class="btn btn-social btn-instagram">
+                <i class="fa fa-instagram"></i>
+			        Instagram
+			    </a>
+			   </div>
+		
+        </div>
+        <div class="col-sm-2 col-md-2 col-xs-6">
+            			    <div class="social">
+			        <a href="https://www.facebook.com/hillyourself2019/" target="_blank" class="btn btn-social btn-instagram">
+                <i class="fa fa-facebook"></i>
+			        Instagram
+			    </a>
+			   </div>
+        </div>
+         <div class="col-sm-2 col-md-2 col-xs-6">
+            			    <div class="social">
+			        <a href="https://www.linkedin.com/hillyourself2019/" target="_blank" class="btn btn-social btn-instagram">
+                <i class="fa fa-linkedin"></i>
+			        linkedin
+			    </a>
+			   </div>
+        </div>
+         <div class="col-sm-2 col-md-2 col-xs-6">
+            			    <div class="social">
+			        <a href="https://www.twitter.com/hillyourself2019/" target="_blank" class="btn btn-social btn-instagram">
+                <i class="fa fa-twitter"></i>
+			        twitter
+			    </a>
+			   </div>
+        </div>
+        <div class="col-sm-2 col-md-2 col-xs-6">
+            			    <div class="social">
+			        <a href="https://www.twitter.com/hillyourself2019/" target="_blank" class="btn btn-social btn-instagram">
+                <i class="fa fa-youtube"></i>
+			        twitter
+			    </a>
+			   </div>
+        </div>
+    </div>
+</div>
+
+</footer>
+</html>
